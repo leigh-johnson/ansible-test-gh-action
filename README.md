@@ -53,6 +53,11 @@ and https://github.com/ansible/ansible/branches/all?query=stable- for
 ideas **(DEFAULT: `stable-2.11`)**
 
 
+### `docker-image`
+
+Name of Docker image `ansible-test --docker [IMAGE]` See https://github.com/ansible/ansible/blob/devel/test/lib/ansible_test/_data/completion/docker.txt for valid image names **(DEFAULT: `default`)**
+
+
 ### `pre-test-cmd`
 
 Extra command to invoke before ansible-test **(OPTIONAL)**
