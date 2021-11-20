@@ -38,6 +38,9 @@ inputs:
   test-deps:
     description: Test dependencies to install along with this collection
     default:
+  verbosity:
+    description: Level of log verbosity
+    default: -v
 outputs:
   ansible-playbook-executable:
     description: Path to the auto-installed `ansible-playbook` executable
@@ -253,7 +256,7 @@ runs:
       set -x
       ;
       ~/.local/bin/ansible-test ${{ inputs.testing-type }}
-      -v --color
+      ${{ inputs.verbosity }} --color
       --docker ${{ inputs.docker-image }}
       --coverage
       ${{

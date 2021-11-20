@@ -57,7 +57,6 @@ ideas **(DEFAULT: `stable-2.11`)**
 
 A container image spawned by `ansible-test` **(OPTIONAL)**
 
-
 ### `pre-test-cmd`
 
 Extra command to invoke before ansible-test **(OPTIONAL)**
@@ -87,3 +86,7 @@ or 'integration')**
 ### `test-deps`
 
 Test dependencies to install along with this collection **(OPTIONAL)**
+
+### `verbosity`
+
+Level of log verbosity **(DEFAULT -v)**
